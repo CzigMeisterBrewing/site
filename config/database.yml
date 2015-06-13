@@ -1,0 +1,17 @@
+development:
+ adapter: sqlite3
+ database: <%= ENV['CZIG_DB_DEV'] %>
+ pool: 5
+ timeout: 5000
+
+test:
+ adapter: sqlite3
+ database: <%= ENV['CZIG_DB_TST'] %>
+ pool: 5
+ timeout: 5000
+
+production:
+ adapter: sqlite3
+ database: <%= ENV['CZIG_DB_PRD'] %>
+ pool: 5
+ timeout: 5000
