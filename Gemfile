@@ -1,34 +1,38 @@
 source 'https://rubygems.org'
 ruby '2.2.1'
 
-gem 'figaro',      '1.1.1'
-gem 'jbuilder', '~> 2.0'
 gem 'rails',       '4.2.1'
+
+gem 'figaro'
+gem 'jbuilder', '~> 2.0'
 
 ##########
 # Assets #
 ##########
 
-gem 'coffee-rails',      '4.1.0'
-gem 'jquery-rails',      '4.0.3'
-gem 'rails_12factor',    '0.0.3'
-gem 'sass-rails',     '~> 5.0.3'
-gem 'uglifier',       '>= 2.7.1'
+gem 'coffee-rails'
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'sass-rails'
+gem 'uglifier'
+
+group :production do
+  gem 'rails_12factor'
+end
 
 #####################
 # Database / Server #
 #####################
 
-gem 'pg',            '0.17.1'
-gem 'unicorn',       '4.9.0'
-gem 'unicorn-rails', '2.2.0'
+gem 'pg'
+gem 'puma'
 
 ##############
 # Test Tools #
 ##############
 
 group :development do
-  gem 'bullet', '4.14.7'
+  gem 'bullet'
 end
 
 group :development, :test do
