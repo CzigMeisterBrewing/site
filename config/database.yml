@@ -55,7 +55,4 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['CZIG_DB_PRD']     %>
-  username: <%= ENV['CZIG_DB_PRD_USR'] %>
-  password: <%= ENV['CZIG_DB_PRD_PWD'] %>
-  url:      <%= ENV['DATABASE_URL']    %>
+  url: <%= ENV['DATABASE_URL'] %>
