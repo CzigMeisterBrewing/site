@@ -79,6 +79,7 @@ GEM
       thor (~> 0.14)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    google-analytics-rails (1.1.0)
     haml (4.0.7)
       tilt
     haml-rails (0.9.0)
@@ -230,6 +231,7 @@ DEPENDENCIES
   database_cleaner (= 1.5.1)
   factory_girl_rails (= 4.6.0)
   figaro (= 1.1.1)
+  google-analytics-rails (= 1.1.0)
   haml-rails (= 0.9.0)
   jazz_fingers (= 3.0.1)
   jbuilder (~> 2.0)

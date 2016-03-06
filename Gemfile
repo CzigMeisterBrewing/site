@@ -16,6 +16,8 @@ gem 'jquery-rails', '4.1.0'
 gem 'sass-rails',   '5.0.4'
 gem 'uglifier',     '2.7.2'
 
+gem 'google-analytics-rails', '1.1.0'
+
 group :production do
   gem 'rails_12factor', '0.0.3'
 end
