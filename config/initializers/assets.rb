@@ -3,8 +3,8 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 
-# Add in path for <NEW> theme.
-# Rails.application.config.assets.paths << Rails.root.join('app/vender/assets/maximum')
+# Add in path for Bushido theme.
+Rails.application.config.assets.paths << Rails.root.join('app/vendor/assets/bushido')
 
 # Precompile addtiaional assets.
 Rails.application.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
