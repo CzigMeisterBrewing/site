@@ -1,16 +1,18 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type'}/
     %title Czig Meister Brewing Company
-    %meta{:content => "initial-scale=1.0,user-scalable=yes", :name => "viewport"}/
+    %meta{:content => 'initial-scale=1.0,user-scalable=yes', :name => 'viewport'}/
     = stylesheet_link_tag 'application', media: 'all'
     = include_controller_css
+    = javascript_include_tag 'js/libs/modernizr.custom.js'
     = csrf_meta_tags
     = analytics_init if GoogleAnalytics.valid_tracker?
   %body
     = render 'shared/header'
-    = yield
+    .page-content
+      = yield
     = render 'shared/footer'
     = javascript_include_tag 'application'
     = include_controller_js
