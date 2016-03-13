@@ -1,0 +1,16 @@
+/* Typography */
+
+@font-face {
+  font-family: 'Frankie';
+  src: asset-url('Frankie.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.czig-font {
+  color: black;
+  font-family: 'Frankie';
+
+  .red   { color: #9E1D1C; }
+  .white { color: #FFF9D3; }
+}

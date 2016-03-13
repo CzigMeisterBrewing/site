@@ -1,2 +1,4 @@
 %h1 pages#home
 %p Find me in app/views/pages/home.html.haml
+- 20.times do
+  %p= Faker::Lorem.paragraph(10, true, 5)
