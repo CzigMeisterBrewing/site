@@ -1,17 +1,3 @@
-// Background
-
-// Generated from:
-// ==> http://www.cssmatic.com/noise-texture
-// ==> http://api.thumbr.it/whitenoise-500x500.png?background=#FFF9D3ff&noise=857d85&density=30&opacity=15
-
-// html {
-//   background: image-url('bkgd_tan_noise.png') repeat center center fixed;
-//   -webkit-background-size: repeat;
-//   -moz-background-size: repeat;
-//   -o-background-size: repeat;
-//   background-size: repeat;
-// }
-
 html {
   background: image-url('bkgd_red_slate.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -37,4 +23,36 @@ body { background: none; }
 
   .red   { color: #9E1D1C; }
   .white { color: #FFF9D3; }
+}
+
+.center { text-align: center; }
+.left   { text-align: left;   }
+.right  { text-align: right;  }
+
+
+// Cross-Site Styles
+
+header {
+  background: $czig-tan;
+  opacity: 0.8;
+
+  .container {
+    height: inherit;
+
+    > .row { height: inherit; }
+  }
+
+  .col-md-5 .row:first-child {
+    font-size: 52px;
+  }
+
+  #logo {
+    height: inherit;
+
+    img {
+      height: inherit;
+      margin: auto;
+    }
+  }
+
 }
