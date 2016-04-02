@@ -1,11 +1,16 @@
 %header.czig-font{ 'data-offset-top': 150, 'data-stuck': 250 }
   .container
+    .row.center#title
+      Czigmeister Brewing Co.
     .row
-      .col-md-5.right
-        .row Czigmeister
-        .row MENU-L
-      .col-md-2#logo
-        %img{ src: asset_path('logo_mashpaddle_clear.png') }
-      .col-md-5.left
-        .row Brewing Co.
-        .row MENU-R
+      %nav.menu
+        %ul.main
+          %li.has-submenu
+            %a{ href: '#' } Tab 1
+            %ul.submenu
+              %li
+                %a{ href: '#' } Link 1
+              %li
+                %a{ href: '#' } Link 2
+              %li
+                %a{ href: '#' } Link 2

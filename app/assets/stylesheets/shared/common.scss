@@ -38,21 +38,91 @@ header {
 
   .container {
     height: inherit;
+    padding-top: 15px;
 
-    > .row { height: inherit; }
+    .row { height: 50%; }
+
+    nav.menu {
+      background: none;
+      font-size: 20px;
+      height: 100%;
+      padding-top: 10px;
+
+      a {
+        color: $czig-red;
+      }
+
+      li.has-submenu:hover {
+        background: $czig-red;
+      }
+
+      .main {
+        border-bottom: 0px;
+        max-width: 100%;
+        padding-left: 0px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    #title { font-size: 4vw; }
   }
 
-  .col-md-5 .row:first-child {
-    font-size: 52px;
-  }
+  &.small-header {
+    .container {
+      padding-top: 0px;
 
-  #logo {
-    height: inherit;
+      nav.menu {
+        padding: 0px;
+      }
 
-    img {
-      height: inherit;
-      margin: auto;
+      #title { font-size: 2vw; }
     }
   }
-
 }
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 100px;
+
+    .container {
+      #title { font-size: 6vw; }
+    }
+  }
+}
+
+
+// header {
+//   background: $czig-tan;
+//   opacity: 0.8;
+
+//   .container {
+//     height: inherit;
+
+//     > .row { height: inherit; }
+//   }
+
+//   .col-md-5 {
+//     height: inherit;
+
+//     .row {
+//       height: 50%;
+
+//       &:first-child { font-size: 4vw; }
+//     }
+//   }
+
+//   #logo {
+//     height: inherit;
+
+//     img {
+//       height: inherit;
+//       margin: auto;
+//     }
+//   }
+
+//   // Change styles to these on transition to small header.
+//   &.small-header {
+//     .col-md-5 .row:first-child { display: none; }
+//   }
+// }
