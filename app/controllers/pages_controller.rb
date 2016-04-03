@@ -1,5 +1,8 @@
 class PagesController < ApplicationController
-  def about
+  def about_us
+  end
+
+  def beers
   end
 
   def brewery
@@ -15,8 +18,5 @@ class PagesController < ApplicationController
   end
 
   def tasting_room
-  end
-
-  def team
   end
 end

@@ -3,11 +3,11 @@ Rails.application.routes.draw do
 
   # Setup routes for (mostly) static site pages namespaced to /.
   [
-    :about,
+    :about_us,
+    :beers,
     :brewery,
     :contact,
     :faq,
     :tasting_room,
-    :team
-  ].each { |page| get "pages/#{page}", path: "/#{page}" }
+  ].each { |page| get "pages/#{page}", path: "/#{page}", as: page }
 end

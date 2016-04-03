@@ -4,7 +4,15 @@ RSpec.describe PagesController, type: :controller do
 
   describe "GET #about" do
     it "returns http success" do
-      get :about
+      get :about_us
+
+      expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe "GET #beers" do
+    it "returns http success" do
+      get :beers
 
       expect(response).to have_http_status(:success)
     end
@@ -45,14 +53,6 @@ RSpec.describe PagesController, type: :controller do
   describe "GET #tasting_room" do
     it "returns http success" do
       get :tasting_room
-
-      expect(response).to have_http_status(:success)
-    end
-  end
-
-  describe "GET #team" do
-    it "returns http success" do
-      get :team
 
       expect(response).to have_http_status(:success)
     end

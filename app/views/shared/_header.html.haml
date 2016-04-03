@@ -5,12 +5,18 @@
     .row
       %nav.menu
         %ul.main
+          %li
+            %a{ href: root_path } Home
+          %li
+            %a{ href: beers_path } Beers
           %li.has-submenu
-            %a{ href: '#' } Tab 1
+            %a{ href: brewery_path } Brewery
             %ul.submenu
               %li
-                %a{ href: '#' } Link 1
+                %a{ href: about_us_path } About Us
               %li
-                %a{ href: '#' } Link 2
-              %li
-                %a{ href: '#' } Link 2
+                %a{ href: tasting_room_path } Tasting Room
+          %li
+            %a{ href: faq_path } FAQ
+          %li
+            %a{ href: contact_path } Contact

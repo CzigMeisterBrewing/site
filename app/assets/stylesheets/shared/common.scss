@@ -46,13 +46,13 @@ header {
       background: none;
       font-size: 20px;
       height: 100%;
-      padding-top: 10px;
+      padding-top: 13px;
 
-      a {
-        color: $czig-red;
-      }
+      a { color: $czig-red; }
 
-      li.has-submenu:hover {
+      li.has-submenu ul.submenu { top: 50px; }
+
+      li:hover, li.has-submenu:hover {
         background: $czig-red;
       }
 
@@ -73,7 +73,14 @@ header {
       padding-top: 0px;
 
       nav.menu {
+        font-size: 16px;
         padding: 0px;
+
+        .main {
+          margin-top: 3px;
+
+          li a { padding: 5px 12px 1px 12px; }
+        }
       }
 
       #title { font-size: 2vw; }
@@ -90,39 +97,3 @@ header {
     }
   }
 }
-
-
-// header {
-//   background: $czig-tan;
-//   opacity: 0.8;
-
-//   .container {
-//     height: inherit;
-
-//     > .row { height: inherit; }
-//   }
-
-//   .col-md-5 {
-//     height: inherit;
-
-//     .row {
-//       height: 50%;
-
-//       &:first-child { font-size: 4vw; }
-//     }
-//   }
-
-//   #logo {
-//     height: inherit;
-
-//     img {
-//       height: inherit;
-//       margin: auto;
-//     }
-//   }
-
-//   // Change styles to these on transition to small header.
-//   &.small-header {
-//     .col-md-5 .row:first-child { display: none; }
-//   }
-// }
