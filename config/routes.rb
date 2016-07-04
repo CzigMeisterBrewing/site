@@ -9,5 +9,5 @@ Rails.application.routes.draw do
     :contact,
     :faq,
     :tasting_room,
-  ].each { |page| get "pages/#{page}", path: "/#{page}", as: page }
+  ].each { |page| get page, controller: 'pages' }
 end
