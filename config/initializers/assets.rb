@@ -9,7 +9,7 @@ Rails.application.config.assets.precompile += %w( js/libs/modernizr.custom.js )
 # Precompile additional assets:
 Rails.application.config.assets.precompile += ['controller/*']
 Rails.application.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
-Rails.application.config.assets.precompile += %w(*.svg *.eot *.woff *.ttf)
+Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
 # Don't automagically precompile all assets.
 # Rails.application.config.assets.precompile += [/.*\.js/,/.*\.css/]

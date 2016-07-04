@@ -68,7 +68,14 @@ header {
     #title { font-size: 4vw; }
   }
 
-  &.small-header {
+  .menu-toggle {
+    color: $czig-red;
+    top: 12px;
+  }
+
+  &.small-header.stuck {
+    opacity: 0.8;
+
     .container {
       padding-top: 0px;
 
