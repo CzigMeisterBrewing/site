@@ -11,6 +11,7 @@ gem 'jbuilder'
 ##########
 
 gem 'coffee-rails'
+gem 'faker'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'sass-rails'
@@ -44,6 +45,4 @@ group :development, :test do
   gem 'rspec-rails'
 
   gem 'database_cleaner'
-
-  gem 'faker'
 end
