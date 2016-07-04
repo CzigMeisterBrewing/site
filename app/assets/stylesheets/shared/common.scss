@@ -33,39 +33,51 @@ body { background: none; }
 // Cross-Site Styles
 
 header {
+  // Replace with smooth grain background.
   background: $czig-tan;
-  opacity: 0.8;
+  height: 100px;
 
   .container {
     height: inherit;
-    padding-top: 15px;
+    margin: 0px 50px;
 
-    .row { height: 50%; }
+    // nav.menu {
+    //   background: none;
+    //   font-size: 20px;
+    //   height: 100%;
+    //   padding-top: 13px;
 
-    nav.menu {
-      background: none;
-      font-size: 20px;
-      height: 100%;
-      padding-top: 13px;
+    //   a { color: $czig-red; }
 
-      a { color: $czig-red; }
+    //   li.has-submenu ul.submenu { top: 50px; }
 
-      li.has-submenu ul.submenu { top: 50px; }
+    //   li:hover, li.has-submenu:hover {
+    //     background: $czig-red;
+    //   }
 
-      li:hover, li.has-submenu:hover {
-        background: $czig-red;
-      }
+    //   .main {
+    //     border-bottom: 0px;
+    //     max-width: 100%;
+    //     padding-left: 0px;
+    //     text-align: center;
+    //     width: 100%;
+    //   }
+    // }
 
-      .main {
-        border-bottom: 0px;
-        max-width: 100%;
-        padding-left: 0px;
-        text-align: center;
-        width: 100%;
+    #logo {
+      float: left;
+
+      img {
+        margin-top: 5px;
+        width: 65%;
       }
     }
 
-    #title { font-size: 4vw; }
+    #title {
+      float: left;
+      font-size: 2.5vw;
+      margin-top: 25px;
+    }
   }
 
   .menu-toggle {
@@ -79,18 +91,28 @@ header {
     .container {
       padding-top: 0px;
 
-      nav.menu {
-        font-size: 16px;
-        padding: 0px;
-
-        .main {
-          margin-top: 3px;
-
-          li a { padding: 5px 12px 1px 12px; }
+      #logo {
+        img {
+          // margin-top: 5px;
+          width: 45%;
         }
       }
 
-      #title { font-size: 2vw; }
+      // nav.menu {
+      //   font-size: 16px;
+      //   padding: 0px;
+
+      //   .main {
+      //     margin-top: 3px;
+
+      //     li a { padding: 5px 12px 1px 12px; }
+      //   }
+      // }
+
+      #title {
+        font-size: 2vw;
+        margin: 15px 0px 0px -30px;
+      }
     }
   }
 }
