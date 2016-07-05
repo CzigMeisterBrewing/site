@@ -2,31 +2,28 @@
   .container
     .row
       #logo
-        = image_tag 'logo_namewithchevron.png'
+        = link_to (image_tag 'logo_namewithchevron.png'), root_path
       #title
         Brewing Company
+      %nav.menu.czig-font.red
+        %ul.main
+          %li
+            %a{ href: root_path } Home
+          %li
+            %a{ href: beers_path } Beers
+          %li.has-submenu
+            %a{ href: brewery_path } Brewery
+            %ul.submenu
+              %li
+                %a{ href: about_us_path } About Us
+              %li
+                %a{ href: tasting_room_path } Tasting Room
+          %li
+            %a{ href: faq_path } FAQ
+          %li
+            %a{ href: contact_path } Contact
+      .menu-toggle
+        %i.fa.fa-list
+      .mobile-border
+        %span
 
-    / .row.center#title
-    /   Czigmeister Brewing Co.
-    / .row
-    /   .menu-toggle
-    /     %i.fa.fa-list
-    /   .mobile-border
-    /     %span
-    /   %nav.menu
-    /     %ul.main
-    /       %li
-    /         %a{ href: root_path } Home
-    /       %li
-    /         %a{ href: beers_path } Beers
-    /       %li.has-submenu
-    /         %a{ href: brewery_path } Brewery
-    /         %ul.submenu
-    /           %li
-    /             %a{ href: about_us_path } About Us
-    /           %li
-    /             %a{ href: tasting_room_path } Tasting Room
-    /       %li
-    /         %a{ href: faq_path } FAQ
-    /       %li
-    /         %a{ href: contact_path } Contact
