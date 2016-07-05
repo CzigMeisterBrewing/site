@@ -30,11 +30,13 @@ body { background: none; }
 .right  { text-align: right;  }
 
 
-// Cross-Site Styles
+/* Cross-Site Styles */
 
+// Desktop
 header {
-  // Replace with smooth grain background.
-  background: $czig-tan;
+  // https://www.flickr.com/photos/pareeerica/2894967198/sizes/o/in/photostream/
+  background: image-url('bkgd_parchment.jpg') no-repeat center center fixed;
+  background-size: cover;
   height: 100px;
 
   .container {
@@ -117,12 +119,21 @@ header {
   }
 }
 
+// Mobile Phones
 @media screen and (max-width: 500px) {
   header {
-    height: 100px;
-
     .container {
-      #title { font-size: 6vw; }
+      #logo {
+        img {
+          margin: 15% 0% 0% -25%;
+          width: 50%;
+        }
+      }
+
+      #title {
+        font-size: 6vw;
+        margin: 10% 0% 0% -17.5%;
+      }
     }
   }
 }
