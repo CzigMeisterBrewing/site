@@ -7,7 +7,7 @@
 .ms-skin-default .ms-video-btn{
 	width: 50px;
 	height: 51px;
-	background: url(light-skin-1.png) no-repeat -14px -150px;
+	background: asset-url('light-skin-1.png') no-repeat -14px -150px;
 	top: 50%;
 	left: 50%;
 	margin: -25px 0 0 -25px;
@@ -16,7 +16,7 @@
 .ms-skin-default .ms-slide .ms-slide-vcbtn {
 	width: 30px;
 	height: 30px;
-	background: url(light-skin-1.png) no-repeat -24px -28px;
+	background: asset-url('light-skin-1.png') no-repeat -24px -28px;
 	top: 18px;
 	right: 30px;
 }
@@ -26,7 +26,7 @@
 .ms-skin-default .ms-nav-next,
 .ms-skin-default .ms-nav-prev {
 	width: 30px;
-	background: url(light-skin-1.png);
+	background: asset-url('light-skin-1.png');
 	background-position: -89px -26px;
 	height: 40px;
 	cursor: pointer;
@@ -47,7 +47,7 @@
 .ms-skin-default .ms-bullet {
 	width: 10px;
 	height: 10px;
-	background: url(light-skin-1.png) no-repeat;
+	background: asset-url('light-skin-1.png') no-repeat;
 	margin: 4px;
 	background-position: -34px -117px;
 }
@@ -119,7 +119,7 @@
 .ms-skin-default .ms-tooltip-point {cursor: pointer;}
 .ms-skin-default .ms-tooltip-point .ms-point-center {
 	width: 12px;
-	height: 12px; 
+	height: 12px;
 	border-radius: 15px;
 	border: solid 2px #BBB;
 	background: white;
@@ -130,13 +130,13 @@
 
 .ms-skin-default .ms-tooltip-point .ms-point-border {
 	width: 22px;
-	height: 22px; 
+	height: 22px;
 	background: black;
 	background:rgba(0, 0, 0, 0.36);
 	margin: -11px 0 0 -11px;
 	position: absolute;
 	border-radius: 15px;
-	
+
 	animation: point-anim 1.5s infinite ;
 	-moz-animation: point-anim 1.5s infinite;
 	-webkit-animation: point-anim 1.5s infinite;
@@ -156,22 +156,22 @@
 }
 
 /* retina */
-@media 
+@media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-	
+
 	.ms-skin-default .ms-slide .ms-slide-vpbtn,
 	.ms-skin-default .ms-video-btn,
 	.ms-skin-default .ms-slide .ms-slide-vcbtn,
 	.ms-skin-default .ms-nav-next,
 	.ms-skin-default .ms-nav-prev,
 	.ms-skin-default .ms-bullet{
-		background-image:url(light-skin-1-retina.png);
+		background-image:asset-url('light-skin-1-retina.png');
 		background-size: 152px 225px;
 	}
-	
+
 }
