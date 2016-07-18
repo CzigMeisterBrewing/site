@@ -10,7 +10,6 @@ gem 'jbuilder'
 # Assets #
 ##########
 
-gem 'coffee-rails'
 gem 'faker'
 gem 'haml-rails'
 gem 'jquery-rails'

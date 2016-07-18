@@ -1,3 +1,17 @@
+%section#home-gallery
+  .master-slider.ms-skin-default#home-masterslider
+    .ms-slide
+      = image_tag 'http://placehold.it/800x350/9E1D1C/FFF9D3?text=Image+1'
+      / .ms-layer.ms-caption{ style: 'top:10px; left:30px;' }
+      /   SLIDE 1
+    .ms-slide
+      = image_tag 'http://placehold.it/800x350/9E1D1C/FFF9D3?text=Image+2'
+      / .ms-layer.ms-caption{ style: 'top:10px; left:30px;' }
+      /   SLIDE 2
+    .ms-slide
+      = image_tag 'http://placehold.it/800x350/9E1D1C/FFF9D3?text=Image+3'
+      / .ms-layer.ms-caption{ style: 'top:10px; left:30px;' }
+      /   SLIDE 3
 .container
   - 20.times do
     %p= Faker::Lorem.paragraph(10, true, 5)
