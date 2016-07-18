@@ -1,7 +1,7 @@
 // Load styling for Bushido template.
-@import 'masterslider/style/masterslider';
-@import 'masterslider/skins/default/style.css';
 @import 'css/styles.scss';
+@import 'masterslider/style/masterslider';
+@import 'masterslider/skins/default/style';
 
 // Load styling specific to Czig Meister website.
 @import 'shared/variables';
