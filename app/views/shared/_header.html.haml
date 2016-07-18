@@ -8,20 +8,20 @@
       %nav.menu.czig-font.red
         %ul.main
           %li
-            %a{ href: root_path } Home
+            = link_to 'Home', root_path
           %li
-            %a{ href: beers_path } Beers
+            = link_to 'Beers', beers_path
           %li.has-submenu
-            %a{ href: brewery_path } Brewery
+            = link_to 'Brewery', brewery_path
             %ul.submenu
               %li
-                %a{ href: about_us_path } About Us
+                = link_to 'About Us', about_us_path
               %li
-                %a{ href: tasting_room_path } Tasting Room
+                = link_to 'Tasting Room', tasting_room_path
           %li
-            %a{ href: faq_path } FAQ
+            = link_to 'FAQ', faq_path
           %li
-            %a{ href: contact_path } Contact
+            = link_to 'Contact', contact_path
       .menu-toggle
         %i.fa.fa-list
       .mobile-border

@@ -10,5 +10,9 @@
   }
 }
 
+.sticky-btns {
+  span, span:hover { background: $czig-red; }
+}
+
 // Page specific styles.
 @import 'controller/pages/home';
