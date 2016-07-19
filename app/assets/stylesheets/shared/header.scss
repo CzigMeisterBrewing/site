@@ -1,7 +1,6 @@
 // Desktop
 header {
-  // https://www.flickr.com/photos/pareeerica/2894967198/sizes/o/in/photostream/
-  background: image-url('bkgd_parchment_lg.jpg') no-repeat center center fixed;
+  background: black;
   background-size: cover;
   height: 100px;
 
@@ -26,15 +25,12 @@ header {
         > a { padding-bottom: 27px; }
       }
 
-
-
       .main {
         border-bottom: 0px;
         float: right;
 
         .submenu {
-          background: image-url('bkgd_parchment_sm.jpg');
-          background-size: cover;
+          background: black;
           border: 2.5px solid $czig-red;
           color: $czig-red;
           padding: 0px;
@@ -72,6 +68,7 @@ header {
     }
 
     #title {
+      color: white;
       float: left;
       font-size: 36px;
       margin-top: 25px;
@@ -95,6 +92,7 @@ header {
         li:hover, li.has-submenu:hover {
           background: $czig-red;
           color: white;
+          opacity: 1.0;
         }
 
         &> ul > li > a {
@@ -123,11 +121,11 @@ header {
       padding: 0px 0px 0px 75px;
 
       nav.menu {
-        background: image-url('bkgd_parchment_lg.jpg') no-repeat center center fixed;
+        background: black;
         border-top: 1px solid $czig-red;
         font-size: 20px;
         height: 225px;
-        opacity: 0.8;
+        opacity: 0.85;
         padding-top: 0px;
         top: 100px;
         width: 100%;
@@ -165,8 +163,8 @@ header {
       }
 
       #title {
-        font-size: 5vw;
-        margin: 11.5% 0% 0% -20%;
+        font-size: 20px;
+        margin: 41px 0% 0% -20%;
       }
     }
 
