@@ -26,6 +26,8 @@ header {
       .main {
         border-bottom: 0px;
         float: right;
+        max-width: auto;
+        width: auto;
 
         .submenu {
           background: black;
@@ -110,6 +112,28 @@ header {
       }
     }
   }
+}
+
+@media screen
+  and (min-width: 1000px)
+  and (max-width: 1200px) {
+    #header-nav {
+      padding-top: 30px;
+
+      .main {
+        margin-right: -50px;
+
+        &> li {
+          font-size: 18px;
+
+          &:hover > a { padding-bottom: 32px; }
+        }
+
+        .submenu {
+          top: 70px;
+        }
+      }
+    }
 }
 
 // Mobile Phones
