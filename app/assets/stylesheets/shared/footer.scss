@@ -3,12 +3,6 @@
   margin-top: 25px;
   padding: 25px;
 
-  #logo {
-    display: inherit;
-    float: left;
-    max-height: 200px;
-  }
-
   .company {
     font-size: 30px;
 
@@ -22,7 +16,11 @@
     p { line-height: 1.25; }
   }
 
-  .info { margin-top: 25px; }
+  .info {
+    margin-top: 25px;
+
+    p { margin-bottom: 0px; }
+  }
 
   .mc_embed_signup_scroll {
     #MCE-email {
@@ -39,7 +37,22 @@
     }
   }
 
-  .social a { margin: 0px 8px 15px 8px; }
+  .social {
+    a {
+      margin: 0px 8px -4px 8px;
+      padding-top: 10px;
+
+      img { width: 24px; }
+    }
+  }
+
+  #copyright { margin-top: 10px; }
+
+  #logo {
+    display: inherit;
+    float: left;
+    max-height: 200px;
+  }
 }
 
 // Mobile Phones
