@@ -159,6 +159,9 @@ header {
         }
 
         .main {
+          float: left;
+          width: 100%;
+
           .has-submenu {
             display: inline-block;
 
