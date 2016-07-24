@@ -17,12 +17,15 @@ body { background: none; }
   font-style: normal;
 }
 
+.bold { font-weight: bold; }
+
 .czig-font {
   color: black;
   font-family: 'Frankie';
 
-  &.red { color: $czig-red; }
-  &.tan { color: $czig-tan; }
+  &.red   { color: $czig-red; }
+  &.tan   { color: $czig-tan; }
+  &.white { color: white;     }
 }
 
 .center { text-align: center; }
