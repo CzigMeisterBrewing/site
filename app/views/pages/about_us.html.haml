@@ -1,2 +1,16 @@
-%h1 pages#about_us
-%p Find me in app/views/pages/about.html.haml
+= content_for(:body) do
+  parallax
+= content_for(:page_content) do
+  about
+%section.hero-static#about-hero
+  .bg-image{ 'data-stellar-background-ratio': '0.5' }
+  .content
+    .inner
+      %h1
+        Awesome team.
+        %br
+        %span.bold
+          Awesome brewery.
+.container
+  - 20.times do
+    %p= Faker::Lorem.paragraph(10, true, 5)

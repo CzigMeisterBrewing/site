@@ -9,9 +9,9 @@
     = javascript_include_tag 'js/libs/modernizr.custom.js'
     = csrf_meta_tags
     = analytics_init if GoogleAnalytics.valid_tracker?
-  %body
+  %body{ class: content_for(:body) }
     = render 'shared/header'
-    .page-content
+    .page-content{ class: content_for(:page_content) }
       = yield
     = render 'shared/sticky_buttons'
     = render 'shared/footer'

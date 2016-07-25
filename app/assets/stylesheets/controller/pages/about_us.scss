@@ -1,0 +1,48 @@
+@import 'shared/variables';
+
+#about-hero {
+  height: 500px;
+
+  .bg-image { background-image: image-url('about_us_hero.png'); }
+
+  .content {
+    display: table;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+
+    .inner {
+      display: table-cell;
+      padding: 300px 15px 0px 15px;
+      vertical-align: middle;
+
+      h1 {
+        text-align: center;
+        -webkit-text-stroke: 3px black;
+
+        span {
+          color: $czig-red;
+          -webkit-text-stroke: 2px white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about-hero {
+    height: 250px;
+
+    .bg-image {
+      background-size: cover;
+      width: 100%;
+    }
+
+    .content {
+      height: 250px;
+
+      .inner { padding: 125px 0px 0px 0px; }
+    }
+  }
+}
