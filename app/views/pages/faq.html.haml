@@ -1,2 +1,61 @@
-%h1 pages#faq
-%p Find me in app/views/pages/faq.html.haml
+.container
+  %h1.center.czig-font.red Frequently Asked Questions (FAQs)
+  .accordion.panel-group#accordion
+    .panel
+      .panel-heading.active
+        %a.bold{ 'aria-expanded': true, 'data-parent': '#accordion', 'data-toggle': 'collapse', href: '#collapseOne' }
+          %i
+          How often will you change beers?
+      .collapse.in#collapseOne{ 'aria-expanded': true }
+        .panel-body
+          We have our 4 staple beers that will be on tap all year round and each seasonal beer will rotate every two to threw months. We will also have specialty “one-off” beers that rotate about every week. Once the kegs that hold the “one-offs” are kicked they’re gone so get them while they last
+    .panel
+      .panel-heading
+        %a.bold{ 'data-parent': '#accordion', 'data-toggle': 'collapse', href: '#collapseTwo' }
+          %i
+          Will there be food?
+      .collapse#collapseTwo
+        .panel-body
+          We will not be serving food at the brewery, but feel free to bring your own food. Bring something from home or bring something from one of the amazing restaurant in Hackettstown - some will even deliver straight to you at the brewery!
+    .panel
+      .panel-heading
+        %a.bold{ 'data-parent': '#accordion', 'data-toggle': 'collapse', href: '#collapseThree' }
+          %i
+          Is there parking?
+      .collapse#collapseThree
+        .panel-body
+          We have our own parking lot that fits 20 cars, and we also lease 20 parking spaces located in the back of the Dollar General store that’s right next to us. In addition, there are nearby street parking spaces and other parking lots in the surround area.
+    .panel
+      .panel-heading
+        %a.bold{ 'data-parent': '#accordion', 'data-toggle': 'collapse', href: '#collapseFour' }
+          %i
+          Where do you get the supplies to make the beer?
+      .collapse#collapseFour
+        .panel-body
+          We use the highest quality, traditional ingredients purchased from the most reputable local suppliers. We typically source our malted barley from Brewers Supply Group and Country Malt Group, and our hops from Hop Union and Country Malt Group.  Our main supplier of yeast is While Labs.
+    .panel
+      .panel-heading
+        %a.bold{ 'data-parent': '#accordion', 'data-toggle': 'collapse', href: '#collapseFive' }
+          %i
+          Are there tours?
+      .collapse#collapseFive
+        .panel-body
+          Of course!  We want you to learn the fascinating step-by-step process of how the beer gets into your glass.  We encourage every visitor to tour our brewery, get familiar about brewing in general and about the styles of beer that we offer on tap.  There are tours given every hour on the hour, and we have educational displays throughout the brewery so that you can give yourself a self-guided tour if you wish. If you are interested in a tour for yourself or your group, just ask one of our tasting room team and we’ll be happy to give you one.
+    .panel
+      .panel-heading
+        %a.bold{ 'data-parent': '#accordion', 'data-toggle': 'collapse', href: '#collapseSix' }
+          %i
+          I love Czig Meister, do you have any Merchandise?
+      .collapse#collapseSix
+        .panel-body
+          We have merchandise that is available at the brewery. We will have T-shirts in different sizes, glassware, growlers, and will be adding more in the future.
+    .panel
+      .panel-heading
+        %a.bold{ 'data-parent': '#accordion', 'data-toggle': 'collapse', href: '#collapseSeven' }
+          %i
+          What hours are you open?
+      .collapse#collapseSeven
+        .panel-body
+          Visit our
+          = link_to 'Contact', contact_path, class: 'bold czig-red'
+          page to get the most up to date hours!

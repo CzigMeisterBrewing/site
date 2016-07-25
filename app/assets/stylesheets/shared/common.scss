@@ -17,6 +17,13 @@ body { background: none; }
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'outlined-iconset';
+  src: asset-url('outlined-iconset.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .bold { font-weight: bold; }
 
 .czig-font {
@@ -27,6 +34,9 @@ body { background: none; }
   &.tan   { color: $czig-tan; }
   &.white { color: white;     }
 }
+
+.czig-red { color: $czig-red; }
+.czig-tan { color: $czig-tan; }
 
 .center { text-align: center; }
 .left   { text-align: left;   }

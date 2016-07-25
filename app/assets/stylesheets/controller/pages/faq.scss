@@ -1,0 +1,14 @@
+.accordion {
+  .panel-body a:hover { color: black; }
+
+  .panel-heading a {
+    border-bottom: 0px;
+    color: $czig-red;
+
+    &:hover {
+      border-bottom: 0px;
+      color: black !important;
+      text-decoration: none;
+    }
+  }
+}
