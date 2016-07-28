@@ -30,7 +30,6 @@
   }
 }
 
-
 .about .team {
   margin-bottom: 0px;
 
@@ -41,6 +40,31 @@
     }
 
     h5 { font-size: 0.875em !important; }
+
+    .mask { border: 3px solid $czig-red; }
+  }
+}
+
+.about.page-content {
+  .tabs-widget .nav-tabs {
+    border-bottom: 1px solid $czig-red;
+
+    li a {
+      color: $czig-red;
+      font-weight: bold;
+
+      &:hover {
+        background: $czig-red;
+        color: white;
+        border: 1px solid $czig-red;
+      }
+    }
+
+    li.active a {
+      background: $czig-red;
+      border: 1px solid $czig-red;
+      color: white;
+    }
   }
 }
 
@@ -62,9 +86,7 @@
 
   .about.page-content {
     .tabs-widget .nav-tabs {
-      font-size: 10px;
-
-      a { font-weight: bold; }
+      li { display: block; }
     }
   }
 }
