@@ -10,6 +10,8 @@ body { background: none; }
 
 // Typography
 
+p { font-size: 1em; }
+
 @font-face {
   font-family: 'Frankie';
   src: asset-url('Frankie.ttf') format('truetype');
