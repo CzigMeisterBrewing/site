@@ -12,5 +12,57 @@
         %span.bold
           Awesome brewery.
 .container
-  - 20.times do
+  %h2.czig-font.red About Us
+  - 2.times do
     %p= Faker::Lorem.paragraph(10, true, 5)
+  %section.team
+    %h2.czig-font.red
+      Meet Our Team
+      .row
+        .col-lg-4
+          .member
+            .mask
+              = image_tag 'http://placekitten.com/263/263'
+            %h4 Matthew Czigler
+            %h5 President / CEO
+
+        .col-lg-4
+          .member
+            .mask
+              = image_tag 'http://placekitten.com/263/263'
+            %h4 Frank Czigler
+            %h5 Vice President / CFO
+        .col-lg-4
+          .member
+            .mask
+              = image_tag 'http://placekitten.com/263/263'
+            %h4 Laura Czigler
+            %h5 Vice President / CMO
+  .tabs-widget
+    %ul.nav.nav-tabs
+      %li.active
+        %a{ 'data-toggle': 'tab', href: '#tab01' } Matt Czigler
+      %li
+        %a{ 'data-toggle': 'tab', href: '#tab02' } Frank Czigler
+      %li
+        %a{ 'data-toggle': 'tab', href: '#tab03' } Laura Czigler
+    .tab-content
+      .tab-pane.fade.active.in#tab01
+        %p
+          Matthew Czigler is the President and CEO of Czig Meister Brewery. After attending the University of Maine at Orono, and obtaining three BS Degrees while there – in Micro Biology, Molecular & Cellular Biology, and Biochemistry, Matt decided to take a year off from school and work at an R&D Bio-tech laboratory perfecting the development of synthetic skin tissue.  At the same time, he found himself spending most of his time off from work practicing his hobby of home brewing, where his science background was quite helpful, and he developed a close-knit group of friends who enjoyed tasting the ever varying styles of beers that Matt experimented with.  Matt found himself enjoying the process of creating new beers and delighting his beer tasting buddies so much that he decided to make a career change – away from medicine to professional brewing.
+        %p
+          He then decided that he wanted to go back to school to study professional brewing from the very best, and to gain professional brewing experience from the ground up.  Matt’s ultimate goal was to someday open his own brewery. It was no small shock to his parents, who envisioned Matt becoming an accomplished Medical Doctor, but Matt got his family’s buy-in by convincing them that his intent was to become a significant positive force in the New Jersey Craft Brewing movement by not just doing his job, but rather “Mastering his Craft” such that he could create beers that would rival among the best nationally and even worldwide.
+        %p
+          Matt’s journey to “Master his Craft” started in late 2010, when he attended the World Brewing Academy at the world famous Siebel Institute of Brewing Technology in Chicago and Siebel’s affiliate school in Munich Germany -Doemen’s Academy. After graduating at the top of his class, he started working at the Adirondack Pub & Brewery in Lake George, NY for about a year, at which point he believed himself to be ready to take on a job where he could take a lead role as either starting a new brewery for someone or help turn a struggling brewery around to be more profitable.  As he started his search, he came across Kane Brewing Company in Ocean County, where the owner was looking for exactly the strong skill set and work ethic that Matt had to offer. He soon thereafter became head brewer at Kane, where Matt had the opportunity to hone his skill further, including to initiate an award winning bourbon barrel beer aging program.  He left Kane in mid-2014 to pursue on a full-time basis his ultimate dream of starting up his own brewery, which became a reality when the Czig Meister Brewery opened to the public in June of 2016.
+        %p
+          Matt absolutely loves to experiment with many beer styles, but his favorite style of beer is a Doppelbock and his favorite Czig Meister beer is the Prospector Amber Ale.
+      .tab-pane.fade#tab02
+        %p
+          Frank Czigler is an experienced home brewer, and as Matthew’s father served as his role model and mentor for pursuing his scientific/technical studies, and later to launch into a career of craft brewing. Frank is a Chemical Engineer by education/training and has just recently retired from Public Service Electric and Gas Company (PSE&G) of New Jersey – after having worked there for over 26 years, and now manages the back office operations for Czig Meister Brewing.
+        %p
+          Frank’s favorite styles of beer are sessionable Pale Ales and IPAs, and his favorite Czig Meister beer is the Falconer Pale Ale.
+      .tab-pane.fade#tab03
+        %p
+          Laura Czigler is Matthew’s mother. She is presently employed as a Registered Nurse (RN) at Morristown Memorial Hospital, in Morristown, NJ – where she has worked in various Intensive Care and Cardiac Care nursing and administrative positions for the past 31 years. Laura continues to work full-time at Morristown Memorial Hospital, and also directs Czig Meister’s marketing needs.
+        %p
+          Laura’s favorite style of beer is a Scotch Weeheavy and her favorite Czig Meister Beer is the Oatmeal Stout.
