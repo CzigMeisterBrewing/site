@@ -7,7 +7,7 @@
     border: 5px solid $czig-red;
     border-radius: 5px;
     margin: 25px auto;
-    opacity: .9;
+    opacity: .95;
     padding: 30px;
   }
 }
@@ -21,3 +21,4 @@
 @import 'controller/pages/beers';
 @import 'controller/pages/faq';
 @import 'controller/pages/home';
+@import 'controller/pages/contact';

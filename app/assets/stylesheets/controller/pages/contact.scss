@@ -1,0 +1,17 @@
+section.container.map {
+  opacity: 1.0;
+}
+
+.cont-info-widget {
+  font-size: 18px;
+}
+
+#contact-form {
+  .form-control {
+    border: 1px solid $czig-red;
+
+    &:focus { box-shadow: 0px 0px 0px 1px $czig-red; }
+  }
+
+  input[type=submit] { background: $czig-red; }
+}
