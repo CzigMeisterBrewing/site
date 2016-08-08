@@ -26,6 +26,15 @@ p { font-size: 1em; }
   font-style: normal;
 }
 
+.alert {
+  border: 2.5px solid white;
+}
+
+.alert-danger {
+  background-color: $czig-red;
+  color: white;
+}
+
 .bold { font-weight: bold; }
 
 .czig-font {

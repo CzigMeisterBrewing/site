@@ -11,3 +11,8 @@ homepageSlider.setup('home-masterslider', {
 });
 
 homepageSlider.control('arrows');
+
+// Global alert settings.
+setTimeout(function(){
+  $('#flash').fadeOut();
+}, 5000);

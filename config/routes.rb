@@ -10,4 +10,7 @@ Rails.application.routes.draw do
     :faq,
     :tasting_room,
   ].each { |page| get page, controller: 'pages' }
+
+  # Setup simple route for Contact Us form.
+  post '/contact_us' => 'contact_us#create'
 end
