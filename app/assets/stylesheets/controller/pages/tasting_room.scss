@@ -1,0 +1,24 @@
+#tasting-room {
+  img {
+    max-width: 40%;
+
+    &.left  {
+      float: left;
+      margin-right: 15px;
+    }
+
+    &.right  {
+      float: right;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #tasting-room {
+    img {
+      max-width: 100%;
+      margin: 0px 0px 15px 0px;
+    }
+  }
+}
