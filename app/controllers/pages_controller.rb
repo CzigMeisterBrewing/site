@@ -16,7 +16,4 @@ class PagesController < ApplicationController
 
   def home
   end
-
-  def tasting_room
-  end
 end

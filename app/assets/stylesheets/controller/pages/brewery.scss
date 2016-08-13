@@ -1,4 +1,4 @@
-#tasting-room {
+#brewery {
   img {
     max-width: 40%;
 
@@ -12,6 +12,8 @@
       margin-left: 15px;
     }
   }
+
+  .row { margin-top: 15px; }
 }
 
 @media screen and (max-width: 500px) {

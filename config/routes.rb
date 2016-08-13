@@ -7,8 +7,7 @@ Rails.application.routes.draw do
     :beers,
     :brewery,
     :contact,
-    :faq,
-    :tasting_room,
+    :faq
   ].each { |page| get page, controller: 'pages' }
 
   # Setup simple route for Contact Us form.

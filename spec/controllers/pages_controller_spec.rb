@@ -49,13 +49,4 @@ RSpec.describe PagesController, type: :controller do
       expect(response).to have_http_status(:success)
     end
   end
-
-  describe "GET #tasting_room" do
-    it "returns http success" do
-      get :tasting_room
-
-      expect(response).to have_http_status(:success)
-    end
-  end
-
 end
