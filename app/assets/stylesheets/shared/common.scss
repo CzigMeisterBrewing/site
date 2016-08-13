@@ -26,6 +26,11 @@ p { font-size: 1em; }
   font-style: normal;
 }
 
+.accordion {
+  .panel-body      { font-size: 1.0em; }
+  .panel-heading a { font-size: 1.1em; }
+}
+
 .alert {
   border: 2.5px solid white;
 }
