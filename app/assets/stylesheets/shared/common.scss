@@ -62,3 +62,9 @@ p { font-size: 1em; }
 .img-thumbnail { border: 3px solid $czig-red; }
 
 .page-content { padding-top: 100px; }
+
+@media screen and (max-width: 500px) {
+  html {
+    background: image-url('bkgd_red_slate_mobile.jpg') no-repeat center center fixed;
+  }
+}
