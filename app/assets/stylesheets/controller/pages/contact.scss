@@ -5,11 +5,12 @@
 }
 
 #contact-form {
+  input[type=submit] { background: $czig-red; }
+
   .form-control {
+    background: white;
     border: 1px solid $czig-red;
 
     &:focus { box-shadow: 0px 0px 0px 1px $czig-red; }
   }
-
-  input[type=submit] { background: $czig-red; }
 }
