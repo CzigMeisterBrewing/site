@@ -4,10 +4,14 @@
 section#home-gallery {
   margin-top: 25px;
 
-  .ms-view {
-    border: 5px solid $czig-red;
-    border-radius: 5px;
-  }
+  .ms-view { @extend .czig-border; }
+}
+
+#home-brewery {
+  @extend .czig-border;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .event {

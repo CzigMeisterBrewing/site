@@ -3,12 +3,17 @@
 // Shared page styles.
 .page-content {
   .container.content {
+    @extend .czig-border;
+
     background: $czig-tan;
-    border: 5px solid $czig-red;
-    border-radius: 5px;
     margin: 25px auto;
     padding: 30px;
   }
+}
+
+.czig-border {
+  border: 5px solid $czig-red;
+  border-radius: 5px;
 }
 
 .sticky-btns {
