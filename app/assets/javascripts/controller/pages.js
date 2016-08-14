@@ -16,3 +16,8 @@ homepageSlider.control('arrows');
 setTimeout(function(){
   $('#flash').fadeOut();
 }, 5000);
+
+// Mailing list submit form.
+$('.subscr-next').click(function(e) {
+  $(this).parents('form').submit();
+});
