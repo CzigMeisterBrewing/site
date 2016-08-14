@@ -1,9 +1,10 @@
 html {
+  background-attachment: fixed;
+  background-size: cover;
   background: image-url('bkgd_red_slate.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: cover;
 }
 
 body { background: none; }
