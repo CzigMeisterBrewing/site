@@ -1,4 +1,11 @@
+@import 'shared/variables';
+
 // Homepage Styles
 section#home-gallery {
   margin-top: 25px;
+
+  .ms-view {
+    border: 5px solid $czig-red;
+    border-radius: 5px;
+  }
 }

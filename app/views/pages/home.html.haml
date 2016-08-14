@@ -1,11 +1,15 @@
 %section#home-gallery
   .master-slider.ms-skin-default#home-masterslider
     .ms-slide
-      = image_tag 'http://placehold.it/800x350/9E1D1C/FFF9D3?text=Image+1'
+      = image_tag 'home_01.jpg'
     .ms-slide
-      = image_tag 'http://placehold.it/800x350/9E1D1C/FFF9D3?text=Image+2'
+      = image_tag 'home_02.jpg'
     .ms-slide
-      = image_tag 'http://placehold.it/800x350/9E1D1C/FFF9D3?text=Image+3'
+      = image_tag 'home_03.jpg'
+    .ms-slide
+      = image_tag 'home_04.jpg'
+    .ms-slide
+      = image_tag 'home_05.jpg'
 .container.content
   - 20.times do
     %p= Faker::Lorem.paragraph(10, true, 5)
