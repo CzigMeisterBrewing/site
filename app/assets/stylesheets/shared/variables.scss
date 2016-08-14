@@ -2,3 +2,8 @@
 
 $czig-red: #9E1D1C;
 $czig-tan: #FFF9D3;
+
+.czig-border {
+  border: 5px solid $czig-red;
+  border-radius: 5px;
+}
