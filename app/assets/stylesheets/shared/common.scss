@@ -13,7 +13,7 @@ body { background: none; }
 
 // Typography
 
-p { font-size: 1em; }
+p { font-size: 18px; }
 
 @font-face {
   font-family: 'Frankie';
@@ -67,6 +67,6 @@ p { font-size: 1em; }
 
 @media screen and (max-width: 500px) {
   html {
-    background: image-url('bkgd_red_slate_mobile.jpg') no-repeat center center fixed;
+    background: image-url('bkgd_red_slate_mobile.jpg') repeat center center fixed;
   }
 }
