@@ -78,10 +78,18 @@ header {
     }
 
     #title {
-      color: white;
       float: left;
       font-size: 36px;
       margin-top: 25px;
+
+      a {
+        color: white;
+
+        &:hover {
+          color: white;
+          text-decoration: none;
+        }
+      }
     }
   }
 
