@@ -7,11 +7,36 @@ section#home-gallery {
   .ms-view { @extend .czig-border; }
 }
 
+#beer-list {
+  text-shadow:
+    -1.0px -1.0px 0 white,
+     1.0px -1.0px 0 white,
+    -1.0px  1.0px 0 white,
+     1.0px  1.0px 0 white;
+}
+
+#home-beer {
+  @extend .czig-border;
+
+  border: 5px solid white;
+}
+
 #home-brewery {
   @extend .czig-border;
 
   margin-left: auto;
   margin-right: auto;
+}
+
+.posts-widget {
+  background: black;
+
+  .latest-posts {
+    background: black;
+    padding-top: 24px;
+  }
+
+  .tw-bg, .twitter-feed { background: $czig-red; }
 }
 
 .event {
