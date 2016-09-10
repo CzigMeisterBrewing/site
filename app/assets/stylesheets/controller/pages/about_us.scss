@@ -46,25 +46,31 @@
 }
 
 .about.page-content {
-  .tabs-widget .nav-tabs {
-    border-bottom: 1px solid $czig-red;
+  .tabs-widget {
+    padding: 0px;
 
-    li a {
-      color: $czig-red;
-      font-weight: bold;
+    .nav-tabs {
+      border-bottom: 1px solid $czig-red;
 
-      &:hover {
+      li a {
+        color: $czig-red;
+        font-weight: bold;
+
+        &:hover {
+          background: $czig-red;
+          color: white;
+          border: 1px solid $czig-red;
+        }
+      }
+
+      li.active a {
         background: $czig-red;
-        color: white;
         border: 1px solid $czig-red;
+        color: white;
       }
     }
 
-    li.active a {
-      background: $czig-red;
-      border: 1px solid $czig-red;
-      color: white;
-    }
+    .tab-content { padding-bottom: 0px; }
   }
 }
 
