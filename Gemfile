@@ -40,7 +40,8 @@ group :development, :test do
   gem 'jazz_fingers'
 
   gem 'capybara'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '~> 4.0'
+  gem 'rspec-pride'
   gem 'rspec-rails'
 
   gem 'database_cleaner'
