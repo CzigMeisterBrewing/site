@@ -1,0 +1,8 @@
+.container.content
+  %h2.czig-font.red Upcoming Events
+  - @events.each do |event|
+    .event
+      %h3.czig-font.black= "#{event.date.strftime('%_m/%_d')}: #{event.name} (#{event.location}) #{event.time}"
+      = link_to event.link, event.link if event.link
+      - if event.description
+        .description= raw(event.description)

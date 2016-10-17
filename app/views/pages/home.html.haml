@@ -44,35 +44,5 @@
         %h3
           Sunday: 12pm to 6pm
 
-.container.content
-  %h2.czig-font.red Upcoming Events
-  .event
-    %h3.czig-font.black 10/01: Ales & Tails Brew Fest at Turtle Back Zoo (West Orange)
-    = link_to 'http://www.visitnj.org/nj-events/ales-tails-brew-fest-essex-county-parks-foundation-fundraiser', 'http://www.visitnj.org/nj-events/ales-tails-brew-fest-essex-county-parks-foundation-fundraiser'
-  .event
-    %h3.czig-font.black 10/01: Hackettstown LIVE Outdoor Concert Series (at the brewery) 12pm-8pm
-  .event
-    %h3.czig-font.black 10/01: The Big Brew Beer Festival (Morristown) 12pm-4pm, 5:30pm-9:30pm
-    = link_to 'http://bigbrewnj.com/morristown/', 'http://bigbrewnj.com/morristown/'
-  .event
-    %h3.czig-font.black 10/04: Cloverleaf Tavern Tap Takeover (Caldwell)
-    = link_to 'http://www.cloverleaftavern.com/events/', 'http://www.cloverleaftavern.com/events/'
-  .event
-    %h3.czig-font.black 10/06: Moonshine Modern Supper Club (Millburn)
-    = link_to 'http://www.moonshinesupperclub.com/', 'http://www.moonshinesupperclub.com/'
-  .event
-    %h3.czig-font.black 10/08: Hackettstown Oktoberfest (at the brewery)
-  .event
-    %h3.czig-font.black 10/18: Capital Craft Tap Takeover (Green Brook)
-    = link_to 'http://capitalcraftnj.com/', 'http://capitalcraftnj.com/'
-  .event
-    %h3.czig-font.black 10/23: Yoga on Tap (at the brewery) 10:30am
-    .description
-      $20 cash-only yoga followed by a free pint; email Larissa Harm at
-      %a{ 'href': 'mailto:larissaharm89@gmail.com?subject=Yoga%20on%20Tap%20Registration', 'target': '_blank'} larissaharm89@gmail.com
-      to preregister!
-  .event
-    %h3.czig-font.black 10/27: Midland Brew House Tap Takeover (Saddle Brook)
-    = link_to 'http://www.midlandbrewhouse.com/', 'http://www.midlandbrewhouse.com/'
-  .event
-    %h3.czig-font.black 10/29: Czig Meister Halloween Celebration (at the brewery)
+- if @events.present?
+  = render 'pages/events'

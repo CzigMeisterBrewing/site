@@ -11,7 +11,7 @@ Event.create!(
 
 Event.create!(
   date:        Date.new(2016,10,23),
-  description: '$20 cash-only yoga followed by a free pint; email Larissa Harm at larissaharm89@gmail.com to preregister!',
+  description: '$20 cash-only yoga followed by a free pint; email Larissa Harm at <a href="mailto:larissaharm89@gmail.com?subject=Yoga%20on%20Tap%20Registration", target="_blank"> larissaharm89@gmail.com</a> to preregister!',
   link:        nil,
   location:    'at the brewery',
   name:        'Yoga on Tap',
