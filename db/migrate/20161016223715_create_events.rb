@@ -8,7 +8,7 @@ class CreateEvents < ActiveRecord::Migration[5.0]
       t.string :time
       t.text   :description
 
-      t.timestamps
+      t.timestamps null: false
     end
 
     add_index :events, :date
