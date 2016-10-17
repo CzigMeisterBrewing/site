@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
 
-gem 'rails'
+gem 'rails', '5.0.0'
+
+gem 'activeadmin',         github: 'activeadmin'
+gem 'devise'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 gem 'figaro'
 gem 'jbuilder'
