@@ -17,3 +17,4 @@ Event.create!(
   name:        'Czig Meister Halloween Celebration',
   time:        nil
 )
+`

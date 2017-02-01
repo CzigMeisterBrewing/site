@@ -43,26 +43,5 @@
           Saturday: 12pm to 10pm
         %h3
           Sunday: 12pm to 6pm
-%section.posts-widget#special-hours
-  .container
-    .twitter-feed
-      .col-lg-8.col-md-8
-        %h1.czig-font.white
-          Special Holiday Hours
-        .row
-          %h2 Thanksgiving
-          %p Special Growler Fills on Wednesday 11/23 from 3pm-8pm; CLOSED Thursday 11/24
-        .row
-          %h2 Christmas
-          %p Special Growler Fills on Saturday 12/24 from 11am-2pm; CLOSED Sunday 12/25
-        .row
-          %h2 New Years
-          %p Special Hours on Saturday 12/31 from 12pm-4pm; CLOSED Sunday 1/1
-        .row
-          %h2 Beginning of January
-          %p CLOSED Thursday 1/5 to Sunday 1/8
-      .col-lg-4.col-md-4.center
-        = image_tag 'holiday_hours.png'
-
 - if @events.present?
   = render 'pages/events'

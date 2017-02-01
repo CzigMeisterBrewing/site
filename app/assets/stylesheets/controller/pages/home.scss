@@ -39,25 +39,6 @@ section#home-gallery {
   .tw-bg, .twitter-feed { background: $czig-red; }
 
   .twitter-feed { padding-top: 24px; }
-
-  &#special-hours {
-    background: $czig-red;
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
-    margin-top: 50px;
-
-    h2 {  margin: -10px 0px 0px 0px; }
-
-    img {
-      display: inline;
-      width: 81.5%;
-    }
-
-    .row {
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-  }
 }
 
 .event {
