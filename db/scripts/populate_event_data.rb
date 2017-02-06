@@ -1,7 +1,7 @@
 require File.expand_path('../../../config/environment', __FILE__)
 
 Event.create!(
-  date:        Date.new(2016,10,27),
+  date:        Date.new(Time.now.year + 10,10,27),
   description: nil,
   link:        'http://www.midlandbrewhouse.com/',
   location:    'Saddle Brook',
@@ -10,11 +10,10 @@ Event.create!(
 )
 
 Event.create!(
-  date:        Date.new(2016,10,29),
+  date:        Date.new(Time.now.year + 10,10,29),
   description: nil,
   link:        nil,
   location:    'at the brewery',
   name:        'Czig Meister Halloween Celebration',
   time:        nil
 )
-`
