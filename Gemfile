@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.6.0'
 
 gem 'haml-rails', '~> 0.9.0'
 gem 'jquery-rails', '~> 4.2.1'
+gem 'paperclip', '~> 5.1.0'
 gem 'sass-rails', '~> 5.0.6'
 gem 'uglifier', '~> 3.0.2'
 
