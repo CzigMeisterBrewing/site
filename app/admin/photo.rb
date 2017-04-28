@@ -1,5 +1,5 @@
 ActiveAdmin.register Photo do
-  permit_params :image, :name
+  permit_params :gallery_id, :image, :name
 
   index do
     selectable_column
@@ -13,8 +13,9 @@ ActiveAdmin.register Photo do
   filter :name
 
   form do |f|
-    f.inputs 'Data' do
+    f.inputs 'General' do
       f.input :name, required: true
+      f.input :gallery_id, label: 'Gallery ID'
     end
 
     f.inputs 'Upload' do
