@@ -3,12 +3,9 @@ ruby '2.3.3'
 
 gem 'rails', '5.0.0'
 
-gem 'activeadmin', '~> 1.0.0.pre4',
+gem 'activeadmin', '~> 1.0.0',
   git: 'https://github.com/activeadmin/activeadmin.git'
 gem 'devise', '~> 4.2.0'
-gem 'inherited_resources', '~> 1.6.0',
-  git: 'https://github.com/activeadmin/inherited_resources.git'
-
 gem 'figaro', '~> 1.1.1'
 gem 'jbuilder', '~> 2.6.0'
 
