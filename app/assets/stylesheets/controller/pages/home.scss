@@ -19,6 +19,7 @@ section#home-gallery {
   @extend .czig-border;
 
   border: 5px solid white;
+  margin-top: 25px;
 }
 
 #home-brewery {
@@ -33,10 +34,16 @@ section#home-gallery {
 
   background: black;
 
+  .container {
+    margin: 50px auto;
+  }
+
   .latest-posts {
     background: black;
     padding-top: 24px;
   }
+
+  .latest-posts, .twitter-feed { height: 400px; }
 
   .tw-bg, .twitter-feed { background: $czig-red; }
 
