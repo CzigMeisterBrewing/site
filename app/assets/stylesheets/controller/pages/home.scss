@@ -4,8 +4,19 @@
 section#home-gallery {
   margin-top: 50px;
 
-  .ms-view { @extend .czig-border; }
+  img {
+    @extend .czig-border;
+
+    margin-left: 12.5%;
+    width: 75%;
+  }
 }
+
+// section#home-gallery {
+//   margin-top: 50px;
+
+//   .ms-view { @extend .czig-border; }
+// }
 
 #beer-list {
   text-shadow:
